@@ -1,1 +1,1 @@
-# lampa-kinorium
+# lampa-kinorium.js
