@@ -1,4 +1,3 @@
-lampa-kinorium.js
 # (function () {
     'use strict';
 
