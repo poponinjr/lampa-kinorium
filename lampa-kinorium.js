@@ -7,7 +7,7 @@
         if (!item || !item.id) return;
 
         const type = item.type === 'movie' ? 'movie' : 'tv';
-        const url = `https://ru.kinorium.com/search/?q=${item.id}&type=${type}&source=tmdb`;
+        const url = 'https://ru.kinorium.com/search/?q=' + item.id + '&type=' + type + '&source=tmdb';
 
         window.open(url, '_blank');
     }
@@ -18,7 +18,7 @@
         const item = e.data.movie;
         if (!item) return;
 
-        Lampa.Buttons.add({
+        Lampa.Controller.add({
             title: 'Кинориум',
             onSelect: function () {
                 openKinorium(item);
@@ -26,5 +26,5 @@
         });
     });
 
-    console.log('Lampa → Kinorium plugin loaded');
+    console.log('Kinorium plugin loaded');
 })();
